@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+
+        header, section, footer, nav, article {
+				display: block;
+        }
+        body {
+				color: #666666;
+				background-color: #f9f8f6;
+				background-image: url("images/dark-wood.jpg");
+				background-position: center;
+				font-family: Georgia, Times, serif;
+				line-height: 1.4em;
+				margin: 0px;
+		}
+
+        .wrapper {
+				width: 940px;
+				margin: 20px auto 20px auto;
+				border: 2px solid #000000;
+				background-color: #ffffff;
+        }
+
+        header {
+				height: 160px;
+				background-image: url(images/header.jpg);
+        }
+        
+        H1 {
+            text-align: left;
+            float: left;
+            background-color: #4CAF50;
+            padding: 16px;
+            color: white;
+        }
+
+        #content {
+            overflow: auto;
+        }
+        
+            nav, footer {
+				clear: both;
+				color: #ffffff;
+				background-color: #aeaca8;
+				height: 30px;
+            }
+			nav ul {
+				margin: 0px;
+				padding: 5px 0px 5px 30px;}
+			nav li {
+				display: inline;
+				margin-right: 40px;
+            }
+			nav li a {
+				color: #ffffff;
+                }
+			nav li a:hover, nav li a.current {
+				color: #000000;
+            }
+
+        article {
+            height: 10em;
+            margin-bottom: 1em;
+            background-color: #efefef;
+            width: 31.3%;
+            float: left;
+            margin: 1%;
+        }
+
+        
+        .welcome_msg {
+            color: #4CAF50;
+            padding: 0px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            float: right;
+            position: relative;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <h1>Logo</h1>
+        <div class="dropdown">
+            <h3 class="welcome_msg">Welcome User XXX</h3>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Calander</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="content">
+        <article>
+            <p>Column One</p>
+        </article>
+        <article>
+            <p>Column Two</p>
+        </article>
+        <article>
+            <p>Column Three</p>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; Copyright 2011</p>
+    </footer>
+    </div><!-- End of Wrapper -->
+</body>
+
+</html>
